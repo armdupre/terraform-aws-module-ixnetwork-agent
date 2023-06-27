@@ -98,7 +98,7 @@ variable "PlacementGroupId" {
 }
 
 variable "Tag" {
-	default = "cyperf"
+	default = "ixnetwork"
 	description = "App ID tag of application using the deployment"
 	type = string
 }
