@@ -49,7 +49,7 @@ variable "InstanceId" {
 }
 
 variable "InstanceType" {
-	default = "c5n.4xlarge"
+	default = "c5n.xlarge"
 	description = "Instance type of VM"
 	type = string
 	validation {
@@ -69,8 +69,6 @@ variable "InstanceType" {
 								"c5n.xlarge", "c5n.2xlarge", "c5n.4xlarge", "c5n.9xlarge", "c5n.18xlarge",
 								"c4.xlarge", "c4.2xlarge", "c4.4xlarge", "c4.8xlarge"
 							], var.InstanceType)
-
-
 		error_message = <<EOF
 InstanceType must be one of the following types:
 	t3.xlarge, t3.2xlarge,
