@@ -1,5 +1,5 @@
 variable "AmiName" {
-	default = "Ixia_Virtual_Test_Appliance_9.36.0.74_KVM BYOL-eaa16046-9580-4e91-8167-302d8cb0da84"
+	default = "Ixia_Virtual_Test_Appliance_10.00.0.140_KVM BYOL-eaa16046-9580-4e91-8167-302d8cb0da84"
 	description = "AMI name used for deploying instances"
 	type = string
 }
@@ -33,12 +33,12 @@ variable "Eth1PrivateIpAddresses" {
 }
 
 variable "Eth1SecurityGroupId" {
-	description = "Id of the subnet associated with the second network interface"
+	description = "Id of the security group associated with second network interface"
 	type = string
 }
 
 variable "Eth1SubnetId" {
-	description = "Id of the security group associated with second network interface"
+	description = "Id of the subnet associated with the second network interface"
 	type = string
 }
 
@@ -128,7 +128,7 @@ variable "UserProjectTag" {
 }
 
 variable "Version" {
-	default = "9-36"
+	default = "10-00"
 	description = "Versioning of the application using the deployment"
 	type = string
 }
