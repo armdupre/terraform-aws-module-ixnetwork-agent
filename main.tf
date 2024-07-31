@@ -26,7 +26,7 @@ resource "aws_instance" "Instance" {
 	}
 	timeouts {
 		create = "9m"
-		delete = "5m"
+		delete = "6m"
 	}
 }
 
