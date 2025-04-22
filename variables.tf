@@ -1,5 +1,5 @@
 variable "AmiName" {
-	default = "Ixia_Virtual_Test_Appliance_10.40.0.75-eaa16046-9580-4e91-8167-302d8cb0da84"
+	default = "Ixia_Virtual_Test_Appliance_10.40.1000.2-eaa16046-9580-4e91-8167-302d8cb0da84"
 	description = "AMI name used for deploying instances"
 	type = string
 }
