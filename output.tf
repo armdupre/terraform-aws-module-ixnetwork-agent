@@ -14,18 +14,17 @@ output "Eth0" {
 	}
 }
 
-output "Eth0ElasticIp" {
-	description = "Elastic Ip resource associated with the first network interface."
-	value = {
-		"public_dns" : "https://${aws_eip.Eth0ElasticIp.public_dns}"
-		"public_ip" : aws_eip.Eth0ElasticIp.public_ip
-	}
-}
-
 output "Eth1" {
 	description = "Ethernet resource associated with the second network interface."
 	value = {
 		"id" : aws_network_interface.Eth1.id
+	}
+}
+
+output "Eth2" {
+	description = "Ethernet resource associated with the third network interface."
+	value = {
+		"id" : aws_network_interface.Eth2.id
 	}
 }
 
